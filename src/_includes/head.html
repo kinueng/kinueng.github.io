@@ -1,0 +1,27 @@
+<head>
+
+    <!-- Set character encoding for the document -->
+    <meta charset="UTF-8">
+    <!-- Instruct Internet Explorer to use its latest rendering engine -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Viewport for responsive web design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <!-- Document Title -->
+    <!-- less than 55 characters -->
+    <title>Kin Ueng</title>
+
+    <!-- Meta Description -->
+    <!-- Description of the page less than 150 characters -->
+    <meta name="description" content="Website of Kin Ueng">
+  
+    {% if jekyll.environment == 'production' and site.google_tag_manager %}
+      {% include google_tag_manager_head.html %}
+    {% endif %}
+  
+    {% if jekyll.environment == 'production' and site.google_analytics %}
+      {% include google_analytics_head.html %}
+    {% endif %}
+  
+  </head>
+  
