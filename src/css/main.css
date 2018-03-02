@@ -66,6 +66,7 @@ nav ul {
     width: -moz-min-content; 
     width: -webkit-min-content;	
     width: min-content;
+    margin: 0 auto;
 }
 
 nav ul li a {
