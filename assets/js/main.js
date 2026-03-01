@@ -34,31 +34,6 @@
 				}, 100);
 			});
 
-		// Fix: Placeholder polyfill.
-			$('form').placeholder();
-
-		// Fix: Flexbox min-height bug on IE.
-			if (skel.vars.IEVersion < 12) {
-
-				var flexboxFixTimeoutId;
-
-				$window.on('resize.flexbox-fix', function() {
-
-					clearTimeout(flexboxFixTimeoutId);
-
-					flexboxFixTimeoutId = setTimeout(function() {
-
-						if ($wrapper.prop('scrollHeight') > $window.height())
-							$wrapper.css('height', 'auto');
-						else
-							$wrapper.css('height', '100vh');
-
-					}, 250);
-
-				}).triggerHandler('resize.flexbox-fix');
-
-			}
-
 		// Buttons.
 			var $nav = $header.children('#buttons'),
 				$nav_li = $nav.find('li');
