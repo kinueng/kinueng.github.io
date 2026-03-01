@@ -22,8 +22,7 @@
 			$body = $('body'),
 			$wrapper = $('#wrapper'),
 			$header = $('#header'),
-			$footer = $('#footer'),
-			$projects = $('#projects');
+			$footer = $('#footer');
 
 		// Disable animations/transitions until the page has loaded.
 			$body.addClass('is-loading');
@@ -44,21 +43,6 @@
 					$nav_li.eq( ($nav_li.length / 2) ).addClass('is-middle');
 				}
 
-		// Events.
-			$window.on('hashchange', function(event) {
-				if (location.hash === '#projects') {
-					$projects.show();
-				} else {
-					$projects.hide();
-				}
-			});
-
-			// Initialize.
-
-				// Show projects menu
-				if(location.hash === "#projects") {
-					$projects.show();
-				}
 	});
 
 })(jQuery);
