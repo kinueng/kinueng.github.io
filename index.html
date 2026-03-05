@@ -11,7 +11,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<!-- Early design toggle — prevents flicker on reload -->
 		<script>
-			if (localStorage.getItem('kinueng-design-v2') === 'kid') {
+			if (localStorage.getItem('kinueng-design-v2') === 'default') {
+				/* user explicitly chose grown-up mode */
+			} else {
 				document.documentElement.classList.add('kid-design');
 			}
 		</script>
