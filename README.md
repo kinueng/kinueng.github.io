@@ -4,11 +4,10 @@ Personal website hosted on GitHub Pages.
 
 ## Local Development
 
-Build and run with Docker:
+Run with Docker (live reload — no rebuild needed):
 
 ```bash
-docker build -t kinueng-site .
-docker run --rm -p 8080:80 kinueng-site
+docker run -d --name kinueng-site -p 8080:80 -v $(pwd):/usr/share/nginx/html:ro nginx:alpine
 ```
 
-Then open [http://localhost:8080](http://localhost:8080) in your browser.
+Then open [http://localhost:8080](http://localhost:8080) in your browser. Any file changes are reflected on refresh.
