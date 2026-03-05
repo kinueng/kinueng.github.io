@@ -212,6 +212,11 @@
 			.kid-landscape { position: relative; z-index: 1; width: 100%; margin-top: 0.5rem; overflow: visible; }
 			.kid-landscape svg { display: block; width: 100%; overflow: visible; }
 
+			/* Mobile: force Grown Up Mode onto its own centered row */
+			@media screen and (max-width: 600px) {
+				.kid-link-switch { order: 1; flex-basis: 100%; max-width: fit-content; margin: 0 auto; }
+			}
+
 			/* Mobile adjustments */
 			@media screen and (max-width: 480px) {
 				html.kid-design #kid-overlay { padding: 1rem; }
